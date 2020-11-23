@@ -112,4 +112,4 @@ jobs:
       # Run functional tests
     - name: set up test environment and run tests
       continue-on-error: false
-      run: ./prepareAndRunFunctionTests.ps1
+      run: .\scripts\prepareAndRunFunctionTests.ps1
