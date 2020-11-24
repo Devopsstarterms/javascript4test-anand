@@ -114,4 +114,4 @@ jobs:
       # Run functional tests
     - name: set up test environment and run tests
       shell: pwsh
-      run: .\Application\scripts\prepareAndRunFunctionTests.ps1
+      run: .\testartifacts\scripts\prepareAndRunFunctionTests.ps1
