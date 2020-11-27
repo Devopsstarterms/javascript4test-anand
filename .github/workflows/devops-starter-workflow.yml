@@ -45,6 +45,9 @@ jobs:
     needs: [build]
     runs-on: windows-latest
     steps:
+    - uses: actions/setup-java@v1
+      with:
+        java-version: '8'
     # Downloading test artifact
     - name: Download test Artifact
       uses: actions/download-artifact@v2
