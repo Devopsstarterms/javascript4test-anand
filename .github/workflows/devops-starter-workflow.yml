@@ -63,4 +63,6 @@ jobs:
       # Run functional tests
     - name: set up test environment and run tests
       shell: powershell
-      run: .\testartifacts\scripts\prepareAndRunFunctionTests.ps1
+      run: |
+        java -version
+        .\testartifacts\scripts\prepareAndRunFunctionTests.ps1
