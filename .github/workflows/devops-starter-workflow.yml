@@ -62,5 +62,5 @@ jobs:
         ls
       # Run functional tests
     - name: set up test environment and run tests
-      shell: pwsh
+      shell: powershell
       run: .\testartifacts\scripts\prepareAndRunFunctionTests.ps1
