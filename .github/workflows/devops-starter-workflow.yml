@@ -33,7 +33,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file $GITHUB_WORKSPACE/${{env.DOCKERFILEPATH}}/pom.xml
     - name: copy scripts directory
-      run: cp -r $GITHUB_WORKSPACE/Application/sampleWebApp.FunctionalTests/scripts target
+      run: cp -r $GITHUB_WORKSPACE/Application/sampleWebApp.FunctionalTests/scripts $GITHUB_WORKSPACE/Application/sampleWebApp.FunctionalTests/target
     - name: Upload target to test artifacts
       continue-on-error: false
       uses: actions/upload-artifact@v2
