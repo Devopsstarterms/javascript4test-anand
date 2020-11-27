@@ -7,4 +7,5 @@ popd
 pwd
 ls
 cd ..
+java -version
 java -DwebAppUrl="https://$\{{ env.APPNAME \}}.azurewebsites.net/" -DChromeWebDriver="$env:temp/chromedriver" -cp SampleWebAppFunctionalTests-jar-with-dependencies.jar org.junit.platform.console.ConsoleLauncher --class-path SampleWebAppFunctionalTests-jar-with-dependencies.jar --scan-class-path --reports-dir reports --include-engine junit-vintage
